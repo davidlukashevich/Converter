@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency exchange rates</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="currency">
+                <div class="currency_row">
+                    <div class="currency_title">Check live foreign currency exchange rates</div>
+                    <div class="currency_img_eth">
+                        <img class="eth" src="img/eth.png" alt="eth">
+                    </div>
+                    <div class="currency_body">
+                        <form class="currency_form">
+                            <div class="currency_form_body">
+                                <div class="currency_input_body">
+                                    <div class="currency_title_input">Amount</div>
+                                    <input class="currency_input" type="number" placeholder="1.00" required>
+                                </div>
+                                <div class="currency_select_body_from">
+                                    <div class="currency_title_from">From</div>
+                                    <select name="from" class="select currency_select_from" required>
+                                        <option value="default_name" disabled selected hidden>Choose currency</option>
+                                    </select>
+                                </div>
+                                <button class="currency_reverse_btn"><img class="reverse" src="img/arrow.png" alt="arrow"></button>
+                                <div class="currency_select_body_to">
+                                    <div class="currency_title_to">To</div>
+                                    <select name="to" class="select currency_select_to" required>
+                                        <option value="default_name" disabled selected hidden>Choose currency</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="currency_convert_btn">Convert</button>
+                            <div class="currency_results">
+                                <div class="currency_result currency_result_from"></div>
+                                <div class="exactly_sign"><span>=</span></div>
+                                <div class="currency_result currency_result_to"></div>
+                            </div>
+                        </form>
+                        <div class="currency_img_btc">
+                            <img class="btc" src="img/btc.png" alt="btc">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
